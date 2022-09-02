@@ -1,0 +1,19 @@
+create database saal;
+
+use saal;
+
+create table pessoa(
+	codigo int not null primary key auto_increment,
+    nome varchar(120) not null,
+    telefone varchar(15) not null,
+    endereco varchar(220) not null,
+    dataDeNascimento date not null,
+    cpf varchar(50) not null,
+    deficiencia varchar(100) not null,
+    avaliacao varchar(500) not null,
+    loval varchar(100) not null
+) engine = InnoDB;
+
+select * from pessoa;
+
+drop table pessoa;
